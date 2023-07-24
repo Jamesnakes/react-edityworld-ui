@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Button } from "antd";
 
 class Login extends Component{
+
     state = {
         name: '張三',
         age: 18
@@ -14,7 +15,7 @@ class Login extends Component{
     render() {
         return(
             <div>
-                <Button className="w-[500px] text-red-500" onClick={this.change.bind(this,'Nihao')}>{this.state.name}</Button>
+                <Button className="text-red-500 w-[500px]" onClick={this.change.bind(this,'Nihao')}>{this.state.name}</Button>
             </div>
         )
     }
