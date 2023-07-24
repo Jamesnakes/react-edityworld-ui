@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Button } from "antd";
+import { Button,ColorPicker } from "antd";
 
 class Login extends Component{
     state = {
@@ -16,6 +16,7 @@ class Login extends Component{
             <div>
                 <Button className="w-[500px] text-red-500" onClick={this.change.bind(this,'Nihao')}>{this.state.name}</Button>
                 <div>按钮</div>
+                <ColorPicker />
             </div>
         )
     }
